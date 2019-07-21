@@ -51,7 +51,7 @@ export default {
   methods : {
     deletThis() {
       axios({
-        url: `http://localhost:3000/api/articles/${this.article._id}`,
+        url: `http://34.87.35.99/api/articles/${this.article._id}`,
         method: 'DELETE',
         headers: {
           token : localStorage.getItem('token')
@@ -72,7 +72,7 @@ export default {
     editThis() {
       axios({ 
         method: 'GET',
-        url: `http://localhost:3000/api/articles/find/${this.article._id}`,
+        url: `http://34.87.35.99/api/articles/find/${this.article._id}`,
         headers: {
           token : localStorage.getItem('token')
         }

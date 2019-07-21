@@ -96,7 +96,7 @@ export default {
       formData.append('password', this.registerInput.password)
       formData.append('image', this.registerInput.image)
        axios({
-         url: 'http://localhost:3000/api/users/register',
+         url: 'http://34.87.35.99/api/users/register',
          method: 'POST',
          data: formData,
          headers: {

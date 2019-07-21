@@ -86,7 +86,7 @@ export default {
       if(input.state == 'all') {
         this.state = input.state
         axios({
-          url: 'http://localhost:3000/api/articles',
+          url: 'http://34.87.35.99/api/articles',
           method: 'GET'
         })
         .then(({data}) => {
@@ -99,7 +99,7 @@ export default {
         this.state = input.state
         axios({ 
           method: 'GET',
-          url: `http://localhost:3000/api/articles/user`,
+          url: `http://34.87.35.99/api/articles/user`,
           headers: {
             'token': localStorage.getItem('token')
           }
@@ -126,7 +126,7 @@ export default {
   mounted() {
     axios({
       method: 'GET',
-      url: `http://localhost:3000/api/articles`
+      url: `http://34.87.35.99/api/articles`
     })
     .then(({data}) => {
       this.articles = data

@@ -3,6 +3,11 @@
     <Navi :isLogin="isLogin" @changeType="goTo" @logout="logout"></Navi>
     <Inside v-if="isLogin" :loggedUser="loggedUser" class="content" @updateProfile="updateProfile"></Inside>
     <Outside v-if="!isLogin" :type="type" class="content" @login="login"></Outside>
+    <v-footer fixed class="elevation-6" >
+      <div id="footer"> 
+        &copy;2019 —  <strong> Jays M </strong>  &nbsp; | Github :  &nbsp; <a href="https://github.com/jaysm12" target="_blank"> https://github.com/jaysm12</a>  
+      </div>
+    </v-footer>
   </div>
 </template>
 <script>
@@ -84,5 +89,8 @@ html, body, #app {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#footer {
+  margin: 0 auto;
+}
 </style>
 

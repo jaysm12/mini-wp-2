@@ -90,7 +90,7 @@ export default {
       formData.append('password', this.editProfile.password)
       formData.append('image', this.editProfile.image)
       axios({
-        url: `http://localhost:3000/api/users/update/${this.loggedUser._id}`,
+        url: `http://34.87.35.99/api/users/update/${this.loggedUser._id}`,
         method: 'PUT',
         data: formData,
         headers: {
