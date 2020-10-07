@@ -95,7 +95,7 @@ export default {
       formData.append('image', this.newArticle.image)
       formData.append('tags', this.tags)
       axios({
-        url: 'http://34.87.35.99/api/articles',
+        url: 'http://54.255.210.197/api/articles',
         method: 'POST',
         data: formData,
         headers: {

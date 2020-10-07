@@ -66,7 +66,7 @@ export default {
       formData.append('content', this.editArticle.content)
       formData.append('image', this.editArticle.image)
       axios({
-        url: `http://34.87.35.99/api/articles/${this.article._id}`,
+        url: `http://54.255.210.197/api/articles/${this.article._id}`,
         method: 'PUT',
         data: formData,
         headers: {

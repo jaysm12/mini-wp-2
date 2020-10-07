@@ -59,7 +59,7 @@ export default {
    methods: {
      login() {
        axios({
-         url: 'http://34.87.35.99/api/users/login',
+         url: 'http://54.255.210.197/api/users/login',
          method: 'POST',
          data: this.loginInput
        })
@@ -83,7 +83,7 @@ export default {
       let token = id_token
       axios({
         method: 'post',
-        url: 'http://34.87.35.99/api/users/google-sign-in',
+        url: 'http://54.255.210.197/api/users/google-sign-in',
         data: {
           token
         }
